@@ -1,0 +1,144 @@
+*{
+    box-sizing: border-box;
+}
+.login-main{
+    position: relative;
+    display: flex;
+}
+.left-side{
+    position: relative;
+    width: 70%;
+    padding: 20px;
+    padding-top: 60px;
+    padding-bottom: 70px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.right-side{
+    position: relative;
+    width: 30%;
+    background-image: url("../images/right-background.jpg");
+    background-size: cover;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.social-login-div{
+    position: relative;
+    display: flex;
+}
+
+.social-login{
+    margin: 8px;
+}
+.or-div{
+    width: 80%;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+.left-line{
+    background-color: black;
+    height: 1px;
+    width: 45%;
+}
+
+.or{
+    margin: 20px;
+}
+.right-line{
+    background-color: black;
+    height: 1px;
+    width: 45%;
+}
+
+
+form{
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.input-txtbx-div{
+    position: relative;
+    width: 100%;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.input-txtbx{
+    width: 75%;
+    height: 40px;
+    padding: 10px;
+    outline: none;
+    font-weight: none;
+    border-radius: 20px;
+    border-width: 0px;
+    background-color: rgb(173, 168, 168);
+}
+
+.submit-button{
+    border-width: 0px;
+    width: 40%;
+    height: 35px;
+    background-color: rgb(10, 66, 83);
+    color: white;
+    font-weight: bold;
+    border-radius: 20px;
+}
+
+.content{
+    color: white;
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+}
+
+.content p{
+    font-size: 17px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+.content h2{
+    font-size: 30px;
+    margin-top:5px;
+    margin-bottom:5px;
+    font-weight: 800 ;
+}
+.content a {
+    width: 100%;
+    position: relative;
+    background-color: white;
+    color: black;
+    height: 35px;
+    border-width: 0px;
+    border-radius: 20px;
+    font-weight: bold;
+    font-weight: 17px;
+}
+.content a button {
+    width: 100%;
+    position: relative;
+    background-color: white;
+    color: black;
+    height: 35px;
+    border-width: 0px;
+    border-radius: 20px;
+    font-weight: bold;
+    font-weight: 17px;
+}
+
+@media(max-width: 700px){
+    .right-side{
+        display:none;
+    }
+    .left-side{
+        width:100%;
+    }
+}

@@ -1,0 +1,12 @@
+.footer{
+    width: 100%;
+    border-top: solid 1px black;
+    padding: 25px;
+    padding-left: 0px;
+}
+
+
+.footer p{
+    margin-left : 10px;
+    font-weight: bold;
+}
