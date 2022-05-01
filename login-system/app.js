@@ -35,7 +35,7 @@ app.use(getUsers_Route);
 
 
 app.get("/", (req,res)=>{
-    res.sendFile("index.html")
+    res.sendFile(path.join(__dirname,"./client/public/index.html"))
 })
 
 

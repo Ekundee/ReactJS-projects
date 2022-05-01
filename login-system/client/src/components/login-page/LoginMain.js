@@ -3,6 +3,7 @@ import { ReactComponent as LinkedInSvg } from '../../images/linkedin.svg';
 import { ReactComponent as GoogleSvg } from '../../images/google.svg';
 import {useState, useEffect} from "react"
 import { useNavigate, Link } from "react-router-dom";
+import { loginApi} from "../../api/loginApi"
 
 
 const LoginMain = () => {
@@ -18,26 +19,15 @@ const LoginMain = () => {
             }, 2000);
         }
     })
+
     const handleLogin = (e) =>{
         e.preventDefault();
-        try{
-            fetch("http://localhost:7070/api_signin",{
-                method : "POST",
-                headers : {"Content-Type" : "application/json"},
-                body : JSON.stringify({firstname : "firstname",lastname : "lastname",email, password})
-            })
-                .then(response=>{
-                // return response.json()
-                    return response.json();
-                })
-                .then(responseData=>{
-                    setInfo(responseData)
-                })
-
-        }catch(err){
-            console.log(err.message)
-            console.log(email)
+        const data = {
+            firstname : "firstname",lastname : "lastname",email, password
         }
+
+        const responseData = loginApi(data)
+        setInfo(responseData)
       
     }
     return ( 
